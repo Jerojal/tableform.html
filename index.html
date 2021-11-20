@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>tableform.html</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styletable.css">
+
+
+
+<body>
+
+<h1>Our daily program</h1>
+
+<table>
+  <caption>Schedule</caption>
+  <tr>
+    <th>Weekly</th>
+    <th>Daily</th>
+	<th>Time</th>
+  </tr>
+  <tr>
+    <td>First week</td>
+    <td>Mondays and Wednesdays</td>
+	<td>18.00</td>
+		 
+  </tr>
+  <tr>	
+    <td>Second week</td>
+    <td>Tuesdays and Thursdays</td>
+	<td>21.00</td>
+  </tr>
+   <tr>
+    <td>Third week</td>
+    <td>Fridays and Saturdays</td>
+	<td>20.00</td>
+  </tr>
+   <tr>
+    <td>Fourth week</td>
+    <td>Wednesdays and Sundays</td>
+	<td>16.00</td>
+  </tr>
+</table>
+<h1>Information</h1>
+ <textarea  rows="4" cols="80">
+Here you can explain some things about yourself, so we can you help you better. You also have the opportunity to receive special offers from us.
+</textarea>
+<form action="https://www.w3schools.com/action_page.php">
+ <fieldset>
+  <legend>Personal information:</legend>
+
+	<label for="fname">First name:</label>
+	<input type="text" id="fname" name="fname" required><br><br>
+	<label for="lname">Last name:</label>
+	<input type="text" id="lname" name="lname" required><br><br>
+	<label for="email">Enter your email:</label>
+	<input type="email" id="email" name="email" required><br><br>
+	<p>What way would you like to receive newsletters?</p>
+
+
+
+<input type="checkbox" id="message1" name="message1" value="message">
+<label for="message1"> Text messages</label><br>
+<input type="checkbox" id="message2" name="message2" value="call">
+<label for="message2"> Calls by phone</label><br>
+<input type="checkbox" id="message3" name="message3" value="email">
+<label for="message3"> Email you have given</label><br>
+<br>
+<label for="offers">How often can we contact you with offers:</label>
+<select id="offers" name="offers">
+  <option value="daily">Daily</option>
+  <option value="weekly">Weekly</option>
+  <option value="monthly">Monthly</option>
+  <option value="yearly">Yearly</option>
+</select>
+ 
+
+<p>If you click the "Submit" button, your information will be sent to a page called "https://www.w3schools.com/action_page.php".</p>
+  <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</body>
+</html>
+
